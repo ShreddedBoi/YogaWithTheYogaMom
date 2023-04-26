@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">YogaWithTheYogaMom</string>
+    <string name="username">Felhasználónév</string>
+    <string name="password">Jelszó</string>
+    <string name="login">Bejelentkezés</string>
+    <string name="registration">Regisztráció</string>
+</resources>
