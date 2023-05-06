@@ -19,4 +19,56 @@
         <item>Mobil</item>
         <item>Egyéb</item>
     </string-array>
+
+    <string-array name="subscription_types">
+        <item>Kismama csomag</item>
+        <item>Gerinc csomag</item>
+        <item>Fogyókúrás csomag</item>
+        <item>Lelki béke csomag</item>
+        <item>Női csomag</item>
+        <item>Férfi csomag</item>
+        <item>Ha másnak érzed magad csomag</item>
+    </string-array>
+
+    <string-array name="subscription_types_desc">
+        <item>Kismamaknak szuper jóga!</item>
+        <item>Gerinctorna jógamama módra</item>
+        <item>Garantált heti 5 kg fogyás</item>
+        <item>Semmi stressz csak a nyugi</item>
+        <item>Bontsd ki a nőiességedet!</item>
+        <item>Tesztoszteronrobbanás lesz a szervezetedben tőle!</item>
+        <item>Egyensúlyt teremt az életedbe és segít kiteljesedni</item>
+    </string-array>
+
+
+    <array name="subs_type_ratings">
+    <item>5</item>
+    <item>5</item>
+    <item>5</item>
+    <item>5</item>
+    <item>5</item>
+    <item>5</item>
+    <item>5</item>
+    </array>
+
+    <array name="subs_type_images">
+        <item>@drawable/pregnant</item>
+        <item>@drawable/spine</item>
+        <item>@drawable/skele</item>
+        <item>@drawable/zen</item>
+        <item>@drawable/woman</item>
+        <item>@drawable/man</item>>
+        <item>@drawable/whichway</item>
+    </array>
+
+    <array name="subs_type_prices">
+        <item>10000 HUF</item>
+        <item>50000 HUF</item>
+        <item>18000 HUF</item>
+        <item>12000 HUF</item>
+        <item>26000 HUF</item>
+        <item>100000 HUF</item>
+        <item>26000 HUF</item>
+    </array>
+
 </resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/search_bar"
+        android:title="Search"
+        android:icon="@drawable/search"
+        app:showAsAction="always"
+        app:actionViewClass="com.google.android.material.search.SearchView"
+        />
+    <item
+        android:id="@+id/cart"
+        android:title="Basket"
+        android:icon="@drawable/basket"
+        app:showAsAction="always"
+
+        app:actionLayout = ""
+        />
+    <item
+        android:id="@+id/view_selector"
+        android:title="View"
+        android:icon="@drawable/view_compact_24"
+        app:showAsAction="always"
+
+        />
+    <item
+        android:id="@+id/settingbutton"
+        android:title="Beállítások"
+        android:icon="@drawable/settings_24"
+        app:showAsAction="never"
+        app:actionViewClass="com.google.android.material.search.SearchView"
+        app:orderInCategory = "2"
+        />
+
+    <item
+        android:id="@+id/log_out_but"
+        android:title="Kijelentkezés"
+        android:icon="@drawable/logout_24"
+        app:showAsAction="never"
+        app:actionViewClass="com.google.android.material.search.SearchView"
+        app:orderInCategory = "1"
+        />
+
+</menu>

@@ -103,10 +103,12 @@ public class RegisterActivity extends AppCompatActivity implements AdapterView.O
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
                     Log.d(LOG_TAG, "User created successfully");
+                    //updateUI(user);
                     startBuyingPackage();
                 }else{
-                    Log.d(LOG_TAG, "User was not created");
+                    Log.w(LOG_TAG, "User was not created");
                     Toast.makeText(RegisterActivity.this, "User creation failed: "+ task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                    //updateUI(null);
                 }
             }
         });
