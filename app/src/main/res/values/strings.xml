@@ -7,4 +7,16 @@
     <string name="email">E-mail cím</string>
     <string name="pwagain">Jelszó megerősítése</string>
     <string name="cancel">Mégse</string>
+    <string name="phone">Telefonszám</string>
+    <string name="adress">Számlázási cím</string>
+    <string name="spinal">Gerincjóga</string>
+    <string name="babymama">Kismama</string>
+    <string name="loginasguest">Bejelentkezés vendégként</string>
+    <string name="loginwithgoogle">Bejelentkezés Google fiókkal</string>
+    <string-array name="phone_modes">
+        <item>Otthoni</item>
+        <item>Munkahelyi</item>
+        <item>Mobil</item>
+        <item>Egyéb</item>
+    </string-array>
 </resources>

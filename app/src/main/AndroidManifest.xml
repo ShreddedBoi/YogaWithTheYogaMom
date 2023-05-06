@@ -12,6 +12,9 @@
         android:theme="@style/Theme.YogaWithTheYogaMom"
         tools:targetApi="31">
         <activity
+            android:name=".SubscriptionListActivity"
+            android:exported="false" />
+        <activity
             android:name=".RegisterActivity"
             android:exported="false" />
         <activity

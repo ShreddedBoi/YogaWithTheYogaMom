@@ -86,4 +86,10 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
         Log.i(LOG_TAG, "onResume");
     }
+
+    public void loginAsGuest(View view) {
+    }
+
+    public void loginWithGoogle(View view) {
+    }
 }

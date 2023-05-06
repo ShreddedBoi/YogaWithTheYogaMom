@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "855825044108",
+    "project_id": "yoga-5a101",
+    "storage_bucket": "yoga-5a101.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:855825044108:android:76391dbdc8bfbb8149e1a9",
+        "android_client_info": {
+          "package_name": "com.example.yogawiththeyogamom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "855825044108-rnk1orgh4u850p0m80fd3sm1s9fr8k4q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.yogawiththeyogamom",
+            "certificate_hash": "f3896ca84bac7ea5f47b5b8204868a4832649fb2"
+          }
+        },
+        {
+          "client_id": "855825044108-2vv842hmjid95mroigmp2ut33kt4dp5s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcf8zztPNr_q92ygd257T5wzDhBsUcXuU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "855825044108-2vv842hmjid95mroigmp2ut33kt4dp5s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
