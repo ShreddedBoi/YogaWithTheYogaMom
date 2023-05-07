@@ -13,9 +13,9 @@
         android:title="Basket"
         android:icon="@drawable/basket"
         app:showAsAction="always"
-
-        app:actionLayout = ""
         />
+<!--        app:actionLayout = ""-->
+
     <item
         android:id="@+id/view_selector"
         android:title="View"
@@ -29,7 +29,7 @@
         android:icon="@drawable/settings_24"
         app:showAsAction="never"
         app:actionViewClass="com.google.android.material.search.SearchView"
-        app:orderInCategory = "2"
+
         />
 
     <item
@@ -38,7 +38,7 @@
         android:icon="@drawable/logout_24"
         app:showAsAction="never"
         app:actionViewClass="com.google.android.material.search.SearchView"
-        app:orderInCategory = "1"
+       
         />
 
 </menu>

@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/loginButton"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/lightgreen"
+    tools:context=".MainActivity">
 
     <EditText
 
         android:id="@+id/editTextUserName"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginTop="80dp"
+        android:layout_marginHorizontal="10dp"
         android:ems="10"
         android:hint="@string/username"
         android:inputType="text"
@@ -24,8 +25,9 @@
 
         android:id="@+id/editTextPassword"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="10dp"
         android:ems="10"
         android:hint="@string/password"
         android:inputType="textPassword"
@@ -35,9 +37,13 @@
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/login"
-        android:onClick="login"
         android:layout_marginTop="40dp"
+        android:onClick="login"
+        android:layout_marginHorizontal="200dp"
+        android:text="@string/login"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:padding="3dp"
         app:layout_constraintVertical_bias="0.078" />
 
 </LinearLayout>

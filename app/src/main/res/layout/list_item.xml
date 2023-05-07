@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_below ="@+id/itemImage"
         android:padding="8dp"
-        android:text="nem tudom még"
+        android:text="Termékcsomag neve"
         android:textColor="?android:textColorSecondary" />
 
     <RatingBar
@@ -35,7 +35,7 @@
 
     <TextView
         android:id="@+id/subTitle"
-        style="@style/ItemDetailText"
+        style="@style/ShapeAppearance.Material3.SmallComponent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/ratingBar"
@@ -44,21 +44,37 @@
 
     <TextView
         android:id="@+id/price"
-        style="@style/ItemDetailText"
+        style="@style/TextAppearance.AppCompat.Small"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/subTitle"
+        android:layout_marginBottom="12dp"
         android:padding="8dp"
         android:textColor="@color/red"
-        android:layout_centeHorizontal= "true" />
+        android:layout_centerHorizontal= "true" />
 
-    <Button
-        android:id="@+id/buy_button"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/price"
-        android:text="Szeretném ezt a csomagot"
-        android:layout_centerHorizontal="true"/>
+        android:layout_below = "@id/price"
+        android:layout_centerHorizontal= "true">
+
+        <Button
+            android:id="@+id/buy_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/add_basket"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/delete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin= "5dp"
+            android:text="@string/delete"
+            android:layout_centerHorizontal="true"/>
+    </LinearLayout>
 
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

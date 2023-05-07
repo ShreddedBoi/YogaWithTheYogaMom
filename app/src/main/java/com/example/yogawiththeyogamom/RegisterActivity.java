@@ -1,8 +1,5 @@
 package com.example.yogawiththeyogamom;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -16,16 +13,13 @@ import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.auth.FirebaseAuthCredentialsProvider;
-
-import java.util.HashMap;
-import java.util.Map;
 
 public class RegisterActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     private static final String LOG_TAG = RegisterActivity.class.getName();
@@ -50,7 +44,7 @@ public class RegisterActivity extends AppCompatActivity implements AdapterView.O
 
         int secret_key = getIntent().getIntExtra("SECRET_KEY", 0);
 
-        if(secret_key != 5){
+        if (secret_key != 5) {
             finish();
         }
         userNameEditText = findViewById(R.id.userNameEditText);
@@ -65,7 +59,7 @@ public class RegisterActivity extends AppCompatActivity implements AdapterView.O
 
         preferences = getSharedPreferences(PREF_KEY, MODE_PRIVATE);
         String userName = preferences.getString("userName", "");
-        String password = preferences.getString("password","");
+        String password = preferences.getString("password", "");
 
         userNameEditText.setText(userName);
         passwordEditText.setText(password);
@@ -85,7 +79,7 @@ public class RegisterActivity extends AppCompatActivity implements AdapterView.O
         String email = userEmailEditText.getText().toString();
         String password = passwordEditText.getText().toString();
         String pwConfirm = pwConfirmEditText.getText().toString();
-        if (!password.equals(pwConfirm)){
+        if (!password.equals(pwConfirm)) {
             Log.e(LOG_TAG, "A két jelszó nem egyezik meg!");
             return;
         }
@@ -105,9 +99,9 @@ public class RegisterActivity extends AppCompatActivity implements AdapterView.O
                     Log.d(LOG_TAG, "User created successfully");
                     //updateUI(user);
                     startBuyingPackage();
-                }else{
+                } else {
                     Log.w(LOG_TAG, "User was not created");
-                    Toast.makeText(RegisterActivity.this, "User creation failed: "+ task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(RegisterActivity.this, "User creation failed: " + task.getException().getMessage(), Toast.LENGTH_LONG).show();
                     //updateUI(null);
                 }
             }
@@ -118,7 +112,7 @@ public class RegisterActivity extends AppCompatActivity implements AdapterView.O
         finish();
     }
 
-    private void startBuyingPackage(/* registered user data*/){
+    private void startBuyingPackage(/* registered user data*/) {
         Intent intent = new Intent(this, SubscriptionListActivity.class);
         intent.putExtra("SECRET_KEY", SECRET_KEY);
         startActivity(intent);

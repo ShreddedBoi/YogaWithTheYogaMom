@@ -4,29 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/lightgreen"
     tools:context=".MainActivity">
+
 
     <EditText
 
         android:id="@+id/editTextUserName"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:ems="10"
         android:hint="@string/username"
         android:inputType="text"
         app:layout_constraintBottom_toTopOf="@+id/editTextPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.803" />
+        app:layout_constraintVertical_bias="0.815" />
 
     <EditText
 
         android:id="@+id/editTextPassword"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="340dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="440dp"
         android:ems="10"
         android:hint="@string/password"
         android:inputType="textPassword"
@@ -39,53 +41,64 @@
         android:id="@+id/loginButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/login"
         android:onClick="login"
+        android:text="@string/login"
+        android:layout_marginHorizontal="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextPassword"
-        app:layout_constraintVertical_bias="0.191" />
-
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        app:layout_constraintVertical_bias="0.106" />
 
     <Button
         android:id="@+id/registerButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/registration"
+        android:backgroundTint="@color/white"
         android:onClick="register"
+        android:text="@string/registration"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/googleSignInButton"
-        app:layout_constraintVertical_bias="0.191" />
+        app:layout_constraintVertical_bias="0.229" />
 
     <Button
         android:id="@+id/guestLoginButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/loginasguest"
         android:onClick="loginAsGuest"
+        android:text="@string/loginasguest"
+        android:layout_marginHorizontal="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginButton"
-        app:layout_constraintVertical_bias="0.191" />
+        app:layout_constraintVertical_bias="0.131"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"/>
 
     <Button
         android:id="@+id/googleSignInButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/loginwithgoogle"
         android:onClick="loginWithGoogle"
+        android:text="@string/loginwithgoogle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/guestLoginButton"
-        app:layout_constraintVertical_bias="0.191" />
+        app:layout_constraintVertical_bias="0.145"
+        android:layout_marginHorizontal="10dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

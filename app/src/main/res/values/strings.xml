@@ -13,6 +13,8 @@
     <string name="babymama">Kismama</string>
     <string name="loginasguest">Bejelentkezés vendégként</string>
     <string name="loginwithgoogle">Bejelentkezés Google fiókkal</string>
+    <string name="delete">Törlés a kosárból</string>
+    <string name="add_basket">Kosárba vele</string>
     <string-array name="phone_modes">
         <item>Otthoni</item>
         <item>Munkahelyi</item>

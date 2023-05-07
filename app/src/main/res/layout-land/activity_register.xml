@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterActivity"
     android:background="@color/lightgreen"
-    >
+    tools:context=".RegisterActivity">
 
     <TextView
         android:id="@+id/registrationTextView"
@@ -157,6 +160,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="register"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
             android:text="@string/registration"
 
             />
@@ -166,6 +171,9 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
             android:onClick="cancel"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
             android:text="@string/cancel" />
     </LinearLayout>
 </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
