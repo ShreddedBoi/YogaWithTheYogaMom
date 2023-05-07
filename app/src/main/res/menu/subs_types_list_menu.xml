@@ -13,8 +13,9 @@
         android:title="Basket"
         android:icon="@drawable/basket"
         app:showAsAction="always"
+        app:actionLayout ="@layout/custom_menu_item"
         />
-<!--        app:actionLayout = ""-->
+
 
     <item
         android:id="@+id/view_selector"

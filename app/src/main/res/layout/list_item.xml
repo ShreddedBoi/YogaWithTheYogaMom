@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="8dp">
@@ -35,12 +36,12 @@
 
     <TextView
         android:id="@+id/subTitle"
-        style="@style/ShapeAppearance.Material3.SmallComponent"
+        style="@style/CardView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/ratingBar"
         android:padding="8dp"
-        android:text="leírás"/>
+        android:text="@string/description"/>
 
     <TextView
         android:id="@+id/price"
